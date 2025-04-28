@@ -2,7 +2,7 @@ const tracks = [
   {title: "A Thousand Times", file: "A thousand times.mp3"},
   {title: "3 Words", file: "3 words.mp4"},
   {title: "Taryn-Paglu", file: "Tarynpaglu.mp4"},
-  {title: "Galti Hui Mujhse", file: "Sorry.mpeg"},
+  {title: "Galti Hui Mujhse", file: "Sorry.mp3"},
   {title: "Perfect", file: "Perfect.mp4"},
   {title: "Saiyyan", file: "Saiyyan.mp4"},
   {title: "Tu Hi Hai", file: "Tu Hi Hai.mp4"}
