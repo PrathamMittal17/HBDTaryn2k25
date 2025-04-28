@@ -9,7 +9,7 @@ body {
   }
   
   .player-container {
-    width: 90%; /* Changed from 360px to 90% */
+    width:100%; /* Changed from 360px to 90% */
     max-width: 1200px; /* Added max-width to prevent it from getting too wide on large screens */
     background: #1e1e1e;
     border-radius: 16px;
