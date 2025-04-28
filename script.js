@@ -4,9 +4,9 @@ const tracks = [
   {title: "Taryn-Paglu", file: "Tarynpaglu.mp4"},
   {title: "Galti Hui Mujhse", file: "Sorry.mp3"},
   {title: "Perfect", file: "Perfect.mp4"},
+  {title: "Ocean",file:"Ocean.mp4"},
   {title: "Saiyyan", file: "Saiyyan.mp4"},
-  {title: "Tu Hi Hai", file: "Tu Hi Hai.mp4"},
-  {title: "Ocean", file: "Ocean.mp4"}
+  {title: "Tu Hi Hai", file: "Tu Hi Hai.mp4"}
 ];
 
 const audioPlayer = document.getElementById('audio-player');
