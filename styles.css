@@ -1,0 +1,159 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  .player-container {
+    width: 90%; /* Changed from 360px to 90% */
+    max-width: 1200px; /* Added max-width to prevent it from getting too wide on large screens */
+    background: #1e1e1e;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .playlist-header {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    width: 100%;
+  }
+  
+  .cover {
+    width: 160px; /* Increased size for better visibility */
+    height: 160px;
+    padding: 10px; /* Equal to width to make it square */
+    border-radius: 0px; /* Removed rounded corners */
+    object-fit: cover;
+  }
+  
+  .playlist-info {
+    margin-left: 25px;
+  }
+  
+  .playlist-info h1 {
+    font-size: 28px; /* Increased size for better visibility on wider container */
+    margin-bottom: 10px;
+  }
+  
+  .playlist-info p {
+    color: #b3b3b3;
+    font-size: 18px; /* Slightly larger */
+  }
+  
+  .track-list {
+    width: 100%;
+    border-top: 1px solid #333;
+    max-height: 300px; /* Increased height for more tracks */
+    overflow-y: auto;
+  }
+  
+  .track {
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .track:hover {
+    background-color: #333;
+  }
+  
+  .track.active {
+    background-color: #535353;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+    border-top: 1px solid #333;
+  }
+  
+  .control-btn {
+    background: none;
+    border: none;
+    color: #b3b3b3;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .control-btn:hover {
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  .play-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #1db954;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .play-btn:hover {
+    background-color: #1ed760;
+    transform: scale(1.05);
+  }
+  
+  .play-btn svg, .control-btn svg {
+    width: 80%;
+    height: 80%;
+  }
+  
+  .prev-btn, .next-btn {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .progress-container {
+    width: 95%;
+    height: 8px; /* Slightly thicker progress bar */
+    background: #333;
+    margin: 15px 0 25px 0; /* Added more space around progress bar */
+    cursor: pointer;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    background: #1db954; /* Spotify green */
+    height: 100%;
+    width: 0%;
+    transition: width 0.2s;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .playlist-header {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .cover {
+      width: 140px;
+      height: 140px;
+      margin-bottom: 15px;
+    }
+    
+    .playlist-info {
+      margin-left: 0;
+    }
+  }

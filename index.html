@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday My Moon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="player-container">
+  <div class="playlist-header">
+    <img src="taryn.jpeg" alt="Cover" class="cover">
+    <div class="playlist-info">
+      <h1>Happy Birthday Taryn <3</h1>
+      <p>Pratham Mittal</p>
+    </div>
+  </div>
+
+  <div class="track-list" id="track-list">
+    <!-- Sample tracks - you can replace or populate dynamically -->
+    <div class="track">A Thousand Times</div>
+    <div class="track">3 Words</div>
+    <div class="track">Taryn-Paglu</div>
+    <div class="track">Galti Hui Mujhse</div>
+  </div>
+
+  <div class="controls">
+    <button onclick="prevTrack()" class="control-btn prev-btn">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M8 5v14l11-7z" transform="rotate(180 12 12)"/>
+      </svg>
+    </button>
+    <button onclick="togglePlay()" id="play-btn" class="control-btn play-btn">
+      <svg id="play-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+      <svg id="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none">
+        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+      </svg>
+    </button>
+    <button onclick="nextTrack()" class="control-btn next-btn">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+    </button>
+  </div>
+
+  <div class="progress-container" onclick="setProgress(event)">
+    <div class="progress" id="progress"></div>
+  </div>
+
+  <audio id="audio-player" src=""></audio>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
